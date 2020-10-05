@@ -1,0 +1,40 @@
+Things to do:
+
+* Allow to place ships randomly (for the computer).
+
+Steps to start game:
+1. Press "start game" in game menu.
+2. Select whether you want to place out your ships at random or manually.
+    1. Random
+        * Place ships at random
+    2. Manually
+        * Make a method to place out ships manually.
+
+
+* Place ships manually:
+    1. Show how many ships you have left to place and which ones.
+    2. Tell the user which ship is being placed now.
+    3. Allow user to enter two coordinates in the following format: A#
+        * A is a letter
+        * # is a number
+    4. Check if the spot is available. If not, ask user to enter another value.
+
+
+
+* Make a game loop
+
+CLASSES TO CREATE:
+* Point (contains a X- and Y- value)
+* PointRange (contains start-point and end-point)
+
+INDEPENDENT METHODS
+* getPoint():       Prompts user for String and converts it into a Point object.
+* getPointRange():  PointRange (uses getPoint())
+
+STATIC METHODS:
+isLocationAvailable(pointRange, grid);
+
+
+
+
+
