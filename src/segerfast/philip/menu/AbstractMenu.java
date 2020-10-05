@@ -1,8 +1,8 @@
 package segerfast.philip.menu;
 
 import segerfast.philip.GameColor;
-import segerfast.philip.SoundUtils;
-import segerfast.philip.Utils;
+import segerfast.philip.utils.SoundUtils;
+import segerfast.philip.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

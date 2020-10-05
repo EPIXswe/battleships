@@ -1,7 +1,5 @@
 package segerfast.philip.ship;
 
-import segerfast.philip.Utils;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;

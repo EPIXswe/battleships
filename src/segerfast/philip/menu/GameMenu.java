@@ -2,8 +2,8 @@ package segerfast.philip.menu;
 
 import segerfast.philip.BattleshipsGame;
 import segerfast.philip.GameColor;
-import segerfast.philip.SoundUtils;
-import segerfast.philip.Utils;
+import segerfast.philip.utils.SoundUtils;
+import segerfast.philip.utils.Utils;
 
 public final class GameMenu extends AbstractMenu {
 
