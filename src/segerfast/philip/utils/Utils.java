@@ -45,7 +45,22 @@ public final class Utils {
         System.out.print(GameColor.YELLOW);
         int input = scanner.nextInt();
         System.out.print(GameColor.RESET);
-        printLineSeparator();
+        return input;
+    }
+
+    /**
+     * Get an int between the specified values
+     * @param start from where (included)
+     * @param end to where (included)
+     * @return the input
+     */
+    public static int getIntInput(int start, int end) {
+
+        int input;
+        do {
+            input = getIntInput();
+        } while(input < start || input > end);
+
         return input;
     }
 
