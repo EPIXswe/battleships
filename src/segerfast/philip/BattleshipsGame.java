@@ -1,6 +1,7 @@
 package segerfast.philip;
 
 import segerfast.philip.grid.BattleGrid;
+import segerfast.philip.utils.SelectionPrompt;
 import segerfast.philip.utils.Utils;
 
 
@@ -19,9 +20,8 @@ public class BattleshipsGame {
     }
 
     public void start() {
-        Utils.printColoredLine("Starting game!", GameColor.BLUE);
-
         initNewGame();
+
 
 
     }
@@ -31,10 +31,19 @@ public class BattleshipsGame {
      */
     private void initNewGame() {
 
+        String promptText = "Would you like to place the ships at random or manually?";
+        SelectionPrompt<Integer> placeShipsRandomOrManually = new SelectionPrompt<>(promptText);
+        placeShipsRandomOrManually.add(1, "At random");
+        placeShipsRandomOrManually.add(2, "Manually");
+        int result = placeShipsRandomOrManually.prompt();
+
+        if(result == 1) {
+            System.out.println("At random");
+        } else if(result == 2) {
+            System.out.println("Manually");
+        }
 
         playerKnownGrid.placeShipsRandom();
-
-
         enemyKnownGrid.placeShipsRandom();
 
         // SPELARENS TUR
